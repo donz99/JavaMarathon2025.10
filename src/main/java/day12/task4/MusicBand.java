@@ -13,10 +13,10 @@ public class MusicBand {
         List<String> listGroupMemberAmount=new ArrayList<>();
         System.out.println(listGroupMemberAmount);
 
-        listGroupMemberAmount.addAll(musicBand1.getGroupMember());
+        listGroupMemberAmount.addAll(musicBand1.getMembers());
         System.out.println(listGroupMemberAmount);
 
-        listGroupMemberAmount.addAll(musicBand2.getGroupMember());
+        listGroupMemberAmount.addAll(musicBand2.getMembers());
         System.out.println(listGroupMemberAmount);
 
         musicBand2.setGroupMember(listGroupMemberAmount);
@@ -26,18 +26,14 @@ public class MusicBand {
         System.out.println(musicBand1);
     }
 
-    public List<String> getGroupMember() {
-        return groupMember;
-    }
 
     public void setGroupMember(List<String> groupMember) {
         this.groupMember = groupMember;
     }
 
-
-
     public void printMembers(){
-        System.out.println(groupMember);
+        for (String s :groupMember)
+            System.out.println(s);
     }
 
     public List<String> getMembers(){
@@ -49,12 +45,6 @@ public class MusicBand {
         this.year=year;
         this.groupMember=groupMember;
     }
-
-//    public void addGroupMember(String... groupMember){
-//        for (String member : groupMember){
-//            this.groupMember=member;
-//        }
-//    }
 
     public String getGroupName() {
         return groupName;

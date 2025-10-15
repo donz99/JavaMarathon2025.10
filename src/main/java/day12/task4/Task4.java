@@ -32,5 +32,8 @@ public class Task4 {
 
         MusicBand.transferMembers(mb1,mb2);
 
+        mb3.printMembers();
+        System.out.println(mb3.getMembers());
+
     }
 }
