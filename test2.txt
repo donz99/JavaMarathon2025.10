@@ -1,0 +1,3 @@
+Daria 18
+Denis 25
+Lena -19
