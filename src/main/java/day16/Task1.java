@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 public class Task1 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         File file1 = new File("D:\\Java 2025\\JavaMarathon2021\\src\\main\\resources\\empty.txt");
 
         printResult(file1);
@@ -18,8 +18,13 @@ public class Task1 {
 
 //        PrintWriter pw = new PrintWriter("D:\\Java 2025\\JavaMarathon2021\\src\\main\\resources\\empty.txt", StandardCharsets.UTF_8);
     }
-    public static void  printResult (File file) throws FileNotFoundException {
-        Scanner sc = new Scanner(file);
+    public static void  printResult (File file) {
+        Scanner sc = null;
+        try {
+            sc = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
         double arifm = 0;
         int count = 0;
         while (sc.hasNextInt()) {
