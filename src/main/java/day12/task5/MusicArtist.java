@@ -27,9 +27,9 @@ public class MusicArtist {
 
     @Override
     public String toString() {
-        return "MusicArtist{" +
-                "nameArtist='" + nameArtist + '\'' +
-                ", ageArtist=" + ageArtist +
+        return "Музыкальный артист: {" +
+                "'" + nameArtist + '\'' +
+                ", возраст: " + ageArtist +
                 '}';
     }
 }

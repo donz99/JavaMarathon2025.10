@@ -33,6 +33,8 @@ public class Task5 {
         listMusicBand2.add(mb3);
 
         MusicBand2.transferMembers(mb1,mb2);
+        mb3.printMembers();
+        System.out.println(mb3.getMembers());
 
     }
 }

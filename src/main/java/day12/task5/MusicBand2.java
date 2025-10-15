@@ -34,10 +34,6 @@ public class MusicBand2 {
         return musicArtists;
     }
 
-    public String getGroupName() {
-        return groupName;
-    }
-
     public void setGroupName(String groupName) {
         this.groupName = groupName;
     }
@@ -66,10 +62,10 @@ public class MusicBand2 {
 
     @Override
     public String toString() {
-        return "MusicBand{" +
-                "groupName='" + groupName + '\'' +
-                ", groupYear=" + groupYear +
-                ", musicArtists=" + musicArtists +
+        return "Музыкальная группа: " +
+                "'" + groupName + '\'' +
+                ", год группы: " + groupYear +
+                ", артисты в группе: " + musicArtists +
                 '}';
     }
 }
