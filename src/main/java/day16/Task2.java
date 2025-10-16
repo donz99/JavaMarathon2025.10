@@ -34,6 +34,6 @@ public class Task2 {
         while (sc.hasNextLine()){
             sum=sum+(Double.parseDouble(sc.nextLine()));
         }
-        System.out.println(Math.round(sum));
+        System.out.println((int)sum);
     }
 }
